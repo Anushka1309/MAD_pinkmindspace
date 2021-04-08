@@ -7,6 +7,7 @@ import 'package:firebase_database/firebase_database.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:geolocator/geolocator.dart';
+import 'package:mad_pinkmindspace/laws.dart';
 
 class HomePage extends StatefulWidget {
   static Route route() {
@@ -124,6 +125,19 @@ class _HomePageState extends State<HomePage> {
               },
               color: Colors.pink[200],
               child: Text("About Domestic Violence",
+                  style: TextStyle(
+                    color: Colors.white,
+                  )),
+            ),
+            MaterialButton(
+              onPressed: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (BuildContext context) => LawsApp()));
+              },
+              color: Colors.pink[200],
+              child: Text("LAWS ON DOMESTIC VIOLENCE",
                   style: TextStyle(
                     color: Colors.white,
                   )),
