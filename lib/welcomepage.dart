@@ -10,14 +10,7 @@ class WelcomeScreen extends StatelessWidget {
         children: <Widget>[
           Expanded(
             flex: 3,
-            child: Container(
-              decoration: BoxDecoration(
-                image: DecorationImage(
-                  image: AssetImage('assets/warrior1.jpeg'),
-                  fit: BoxFit.cover,
-                ),
-              ),
-            ),
+            child: Image(image: AssetImage('assets/images/heybhagwaan.jpeg')),
           ),
           Expanded(
             child: Column(

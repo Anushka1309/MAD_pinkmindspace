@@ -1,5 +1,6 @@
 import 'package:mad_pinkmindspace/constants.dart';
 import 'package:flutter/material.dart';
+import 'package:mad_pinkmindspace/home/home.dart';
 
 import 'constants.dart';
 
@@ -64,11 +65,10 @@ class ReadScreen extends StatelessWidget {
                 FittedBox(
                   child: GestureDetector(
                     onTap: () {
-                      Navigator.push(context, MaterialPageRoute(
-                        builder: (context) {
-                          return;
-                        },
-                      ));
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (BuildContext context) => HomePage()));
                     },
                     child: Container(
                       margin: EdgeInsets.only(top: 50),
@@ -81,7 +81,7 @@ class ReadScreen extends StatelessWidget {
                       child: Row(
                         children: <Widget>[
                           Text(
-                            "Rules",
+                            "HOME",
                             style: Theme.of(context).textTheme.button.copyWith(
                                   color: Colors.black,
                                 ),

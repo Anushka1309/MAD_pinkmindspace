@@ -80,7 +80,7 @@ class _HomePageState extends State<HomePage> {
                   getCurrentLocation(user.email);
                 });
               },
-              color: Colors.blue[800],
+              color: Colors.pink[100],
               child: Text("SOS",
                   style: TextStyle(
                     color: Colors.white,
@@ -90,7 +90,7 @@ class _HomePageState extends State<HomePage> {
               onPressed: () {
                 cancelTimer();
               },
-              color: Colors.blue[800],
+              color: Colors.pink[100],
               child: Text("Stop",
                   style: TextStyle(
                     color: Colors.white,
@@ -103,7 +103,7 @@ class _HomePageState extends State<HomePage> {
                     MaterialPageRoute(
                         builder: (BuildContext context) => MyApp()));
               },
-              color: Colors.blue[800],
+              color: Colors.pink[100],
               child: Text("About Domestic Violence",
                   style: TextStyle(
                     color: Colors.white,
