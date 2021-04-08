@@ -6,6 +6,7 @@ class WelcomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.pink[100],
       body: Column(
         children: <Widget>[
           Expanded(
@@ -21,11 +22,11 @@ class WelcomeScreen extends StatelessWidget {
                   text: TextSpan(
                     children: [
                       TextSpan(
-                        text: "Let's Shine\n",
+                        text: "LET'S SHINE\n",
                         style: Theme.of(context).textTheme.headline3,
                       ),
                       TextSpan(
-                        text: "Together!",
+                        text: "TOGETHER!",
                         style: Theme.of(context).textTheme.headline5,
                       )
                     ],
@@ -56,13 +57,13 @@ class WelcomeScreen extends StatelessWidget {
                           Text(
                             "Welcome",
                             style: Theme.of(context).textTheme.button.copyWith(
-                                  color: Colors.black,
+                                  color: Colors.white,
                                 ),
                           ),
-                          SizedBox(width: 10),
+                          SizedBox(width: 30),
                           Icon(
                             Icons.arrow_forward,
-                            color: Colors.black,
+                            color: Colors.white,
                           )
                         ],
                       ),

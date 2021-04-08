@@ -71,6 +71,7 @@ class _AdminPageState extends State<AdminPage> {
     final user = context.select((AuthenticationBloc bloc) => bloc.state.user);
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.pink[200],
         title: const Text('Home'),
         actions: <Widget>[
           IconButton(
@@ -85,7 +86,17 @@ class _AdminPageState extends State<AdminPage> {
       body: Center(
         child: ListView(
           children: <Widget>[
-            Avatar(photo: user.photo),
+            //Avatar(photo: user.photo),
+            CircleAvatar(
+              backgroundColor: Colors.pink,
+              child: Icon(
+                Icons.person,
+                color: Colors.white,
+                size: 24.0,
+                semanticLabel: 'Text to announce in accessibility modes',
+              ),
+              //child: Text('AH'),
+            ),
             const SizedBox(height: 4.0),
             Text(user.email, style: textTheme.headline6),
             const SizedBox(height: 4.0),
@@ -132,7 +143,7 @@ class _AdminPageState extends State<AdminPage> {
                           tileColor: Colors.pink[100],
                           title: Text(email[index]),
                           subtitle: Text("Help me at"
-                              "Lat: ${latitude[index]}, Long: ${longitude[index]}"),
+                              "\nLat: ${latitude[index]}, Long: ${longitude[index]}"),
                         );
                       },
                       separatorBuilder: (context, index) => Divider(),
