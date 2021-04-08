@@ -1,5 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.mad_pinkmindspace">
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCES_COARSE_LOCATION"/>
    <application
         android:label="mad_pinkmindspace"
         android:icon="@mipmap/ic_launcher">
