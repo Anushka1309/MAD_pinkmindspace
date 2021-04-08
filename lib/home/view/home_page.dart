@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:mad_pinkmindspace/authentication/bloc/authentication_bloc.dart';
+import 'package:mad_pinkmindspace/domestic.violence.dart';
 import 'package:mad_pinkmindspace/home/widgets/avatar.dart';
 import 'package:firebase_database/firebase_database.dart';
 import 'package:flutter/material.dart';
@@ -80,7 +81,7 @@ class _HomePageState extends State<HomePage> {
                 });
               },
               color: Colors.blue[800],
-              child: Text("Get Current Location",
+              child: Text("SOS",
                   style: TextStyle(
                     color: Colors.white,
                   )),
@@ -90,7 +91,20 @@ class _HomePageState extends State<HomePage> {
                 cancelTimer();
               },
               color: Colors.blue[800],
-              child: Text("close",
+              child: Text("Stop",
+                  style: TextStyle(
+                    color: Colors.white,
+                  )),
+            ),
+            MaterialButton(
+              onPressed: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (BuildContext context) => MyApp()));
+              },
+              color: Colors.blue[800],
+              child: Text("About Domestic Violence",
                   style: TextStyle(
                     color: Colors.white,
                   )),
