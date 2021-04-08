@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "901873152208",
+    "project_id": "madpinkmindspace",
+    "storage_bucket": "madpinkmindspace.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:901873152208:android:390d3be3c114e9fd1c2ed5",
+        "android_client_info": {
+          "package_name": "com.example.mad_pinkmindspace"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "901873152208-itbg4k29jkrq00if6c4l3sgb0oulpnq4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAp5GYXshdZCF4t419Bz-YbtRs9a0bSMQg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "901873152208-itbg4k29jkrq00if6c4l3sgb0oulpnq4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
