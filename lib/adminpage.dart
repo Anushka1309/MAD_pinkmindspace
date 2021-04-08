@@ -129,9 +129,9 @@ class _AdminPageState extends State<AdminPage> {
                       physics: BouncingScrollPhysics(),
                       itemBuilder: (context, index) {
                         return ListTile(
-                          tileColor: Colors.red,
+                          tileColor: Colors.pink[100],
                           title: Text(email[index]),
-                          subtitle: Text(
+                          subtitle: Text("Help me at"
                               "Lat: ${latitude[index]}, Long: ${longitude[index]}"),
                         );
                       },

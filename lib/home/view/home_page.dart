@@ -52,7 +52,9 @@ class _HomePageState extends State<HomePage> {
     final textTheme = Theme.of(context).textTheme;
     final user = context.select((AuthenticationBloc bloc) => bloc.state.user);
     return Scaffold(
+      backgroundColor: Colors.black,
       appBar: AppBar(
+        backgroundColor: Colors.pink[300],
         title: const Text('Home'),
         actions: <Widget>[
           IconButton(
@@ -69,9 +71,26 @@ class _HomePageState extends State<HomePage> {
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: <Widget>[
-            Avatar(photo: user.photo),
+            //Avatar(photo: user.photo),
+            CircleAvatar(
+              backgroundColor: Colors.pink,
+              child: Icon(
+                Icons.person,
+                color: Colors.white,
+                size: 24.0,
+                semanticLabel: 'Text to announce in accessibility modes',
+              ),
+              //child: Text('AH'),
+            ),
             const SizedBox(height: 4.0),
-            Text(user.email, style: textTheme.headline6),
+            Text(
+              user.email,
+              style: TextStyle(
+                fontSize: 25,
+                fontWeight: FontWeight.bold,
+                color: Colors.white,
+              ),
+            ),
             const SizedBox(height: 4.0),
             Text(user.name ?? '', style: textTheme.headline5),
             MaterialButton(
@@ -80,7 +99,7 @@ class _HomePageState extends State<HomePage> {
                   getCurrentLocation(user.email);
                 });
               },
-              color: Colors.pink[100],
+              color: Colors.pink[200],
               child: Text("SOS",
                   style: TextStyle(
                     color: Colors.white,
@@ -90,7 +109,7 @@ class _HomePageState extends State<HomePage> {
               onPressed: () {
                 cancelTimer();
               },
-              color: Colors.pink[100],
+              color: Colors.pink[200],
               child: Text("Stop",
                   style: TextStyle(
                     color: Colors.white,
@@ -103,7 +122,7 @@ class _HomePageState extends State<HomePage> {
                     MaterialPageRoute(
                         builder: (BuildContext context) => MyApp()));
               },
-              color: Colors.pink[100],
+              color: Colors.pink[200],
               child: Text("About Domestic Violence",
                   style: TextStyle(
                     color: Colors.white,
