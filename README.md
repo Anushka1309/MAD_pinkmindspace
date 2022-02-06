@@ -1,6 +1,7 @@
 # mad_pinkmindspace
 
-Our app, The Safety Hut gives is an app which will help women who are undergoing domestic violence. The basic theme of our app is to provide immediate and urgent and provides many more features.
+``Our app, The Safety Hut gives is an app which will help women who are undergoing domestic violence. The basic theme of our app is to provide immediate and urgent and provides many more features.``
+
 The features which our app provides is :
 
 1.  It will provide you information about DOMESTIC VIOLENCE and what it really is. Many women are indiiferent of what it even means. This will aware them about it.
